@@ -8,6 +8,7 @@ $(function () {
       $thisP.before($oissuDiv);
 
       let $cur = $thisP.next();
+      $thisP.remove();
       let o = 0;
       while (o < 500) {
         if ($cur.text().match(/\[.*☆.*\]/g)) {
